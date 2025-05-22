@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poiupv.ListaControlador">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="104.0" prefWidth="700.0">
+               <children>
+                  <Label text="Navegatest" />
+               </children>
+            </VBox>
+            <HBox prefHeight="455.0" prefWidth="700.0">
+               <children>
+                  <ListView fx:id="listaProblemas" prefHeight="423.0" prefWidth="691.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="172.0" prefWidth="700.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0, 2); -fx-background-radius: 15; -fx-background-color: #4CAF50; -fx-text-fill: white;" text="Volver" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0, 2);; -fx-background-radius: 15; -fx-background-color: #4CAF50; -fx-text-fill: white;" text="Aleatorio" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="Realizarproblema" mnemonicParsing="false" onAction="#iraproblema" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0, 2);; -fx-background-radius: 15; -fx-background-color: #4CAF50; -fx-text-fill: white;" text="Realizar problema" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
