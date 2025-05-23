@@ -42,7 +42,7 @@ public class ListaControlador implements Initializable {
     private void irAProblema(ActionEvent evento) {
         ejercicios ejercicioSeleccionado = listaProblema.getSelectionModel().getSelectedItem();
         if (ejercicioSeleccionado != null) {
-            System.out.println("Ejercicio seleccionado: " + ejercicioSeleccionado.getTexto());
+          //  System.out.println("Ejercicio seleccionado: " + ejercicioSeleccionado.getTexto());
         }
     }
 
