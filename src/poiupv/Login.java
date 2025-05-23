@@ -8,6 +8,6 @@ package poiupv;
  *
  * @author Diego Molina
  */
-public class PRUEBAGIT {
+public class Login {
     
 }
