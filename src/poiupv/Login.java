@@ -9,6 +9,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 
 /**
  *
@@ -17,12 +19,22 @@ import javafx.scene.control.TextField;
 public class Login {
 
     @FXML
-    private Label registrarse;
+    private BorderPane borderpane;
     @FXML
-    private TextField usuarioIniciar;
+    private Label titulo;
     @FXML
-    private PasswordField contraseñaIniciar;
+    private Label labelRegistro;
     @FXML
-    private Button botonIniciarsesion;
+    private GridPane gridpane2;
+    @FXML
+    private TextField nickText;
+    @FXML
+    private PasswordField contraText;
+    @FXML
+    private Button botonLogin;
+    @FXML
+    private Label labelNick;
+    @FXML
+    private Label labelEstado;
     
 }
