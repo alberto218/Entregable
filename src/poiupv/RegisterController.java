@@ -17,13 +17,14 @@ import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
-//import model.Navigation;
-//import model.User;
+import model.Navigation;
+import model.User;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.time.LocalDate;
+import model.NavDAOException;
 
 /**
  *
@@ -78,8 +79,8 @@ public class RegisterController {
         }
     }
 
-    /*@FXML
-    private void registerUser() {
+    @FXML
+    private void registerUser() throws NavDAOException {
         String nick = nicknameField.getText().trim();
         String email = emailField.getText().trim();
         String password = passwordField.getText().trim();
@@ -132,5 +133,5 @@ public class RegisterController {
         birthdatePicker.setValue(null);
         avatarPreview.setImage(null);
         selectedAvatar = null;
-    }*/
+    }
 } 

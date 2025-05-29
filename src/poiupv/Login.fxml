@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poiupv.Login">
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poiupv.LoginController">
    <top>
       <VBox alignment="CENTER" prefHeight="75.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -29,7 +29,7 @@
       <HBox alignment="CENTER" prefHeight="74.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <Label text="¿No tienes cuenta?" />
-            <Label fx:id="labelRegistro" onMouseClicked="#registrarse" onMouseEntered="#handleLabelRegistro" onMouseExited="#handleLabelSalida" text="Registrarse" underline="true">
+            <Label fx:id="registerLabel" onMouseClicked="#registrarse" onMouseEntered="#handleLabelRegistro" onMouseExited="#handleLabelSalida" text="Registrarse" underline="true">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>
@@ -61,7 +61,7 @@
                   <Insets left="30.0" />
                </padding>
             </Label>
-            <TextField fx:id="nickText" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="547.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+            <TextField fx:id="nicknameField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="547.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="30.0" right="30.0" />
                </GridPane.margin>
@@ -71,24 +71,24 @@
                   <Insets left="30.0" />
                </GridPane.margin>
             </Label>
-            <PasswordField fx:id="contraText" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="541.0" GridPane.columnSpan="2" GridPane.rowIndex="4">
+            <PasswordField fx:id="passwordField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="541.0" GridPane.columnSpan="2" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets left="30.0" right="30.0" />
                </GridPane.margin>
             </PasswordField>
-            <Button fx:id="botonLogin" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="26.0" prefWidth="542.0" text="Iniciar Sesión" GridPane.columnSpan="2" GridPane.rowIndex="6">
+            <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="26.0" prefWidth="542.0" text="Iniciar Sesión" GridPane.columnSpan="2" GridPane.rowIndex="6">
                <GridPane.margin>
                   <Insets left="30.0" right="30.0" />
                </GridPane.margin>
             </Button>
-            <Label fx:id="labelNick" GridPane.rowIndex="2">
+            <Label fx:id="nicknameErrorLabel" prefHeight="18.0" prefWidth="484.0" textFill="RED" GridPane.columnSpan="2" GridPane.rowIndex="2">
                <GridPane.margin>
-                  <Insets left="30.0" />
+                  <Insets left="30.0" right="30.0" />
                </GridPane.margin>
             </Label>
-            <Label fx:id="labelEstado" GridPane.rowIndex="5">
+            <Label fx:id="passwordErrorLabel" prefHeight="18.0" prefWidth="429.0" textFill="RED" GridPane.columnSpan="2" GridPane.rowIndex="5">
                <GridPane.margin>
-                  <Insets left="30.0" />
+                  <Insets left="30.0" right="30.0" />
                </GridPane.margin>
             </Label>
          </children>
